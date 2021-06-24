@@ -1,0 +1,470 @@
+D: 14/06/2021
+
+Cloud Computing : 
+NIST : 
+
+COmputing Resources : vCPU, Memory/RAM, Application, Operating System, COoling, power connectivity..
+
+--> Tenancy :
+	--> Shared tenancy :  
+	--> Dedicated tenancy : 
+
+Cloud Service Providers : AWS, Azure, GCP, Rackspace, Alibaba Cloud, IBM cloud, Oracle Cloud, Fihitsu, Tencent cloud, Dell Bhoomi..!!!
+
+___
+Certification : CLoud Practitioner : 
+
+CAPEX : Capital Expendature : No Capital Expendature..
+OPEX : Operational Expendature : Less Opex..
+
+___
+
+CDN : Content Delivery Network : 270+ : Akamai, Cloudflair, aws CLoudfront
+
+--> Pay-as-you-go : Pay for the resources you actually used. 
+
+
+________________________________________________________________________________________
+
+
+--> DO we required any experience to learn AWS.?
+ANS : No prior experience required to learn AWS..!!
+
+--> Do we need to learn Linux.?
+ANS : YES.. Basic Linux required..  FREE Linux.. LInux on AWS (Pre Recorded course)..
+2-3 Sessions on Linux OS in COurse..
+
+--> DO we need any Networking/storage/server/database experience.?
+ANS : NO.. NOVOICE.. Basic to Advanced..!!
+
+--> Do we need to have any Programing experience to learn aws..!!
+ANS : No Prog exp required to learn aws..!!! 
+
+Development job : 
+AWS Developer : YES, (Python, .net core, java, node.js, go, ruby, TYpeScript, JSON/YAML)
+--> CDK (CLoud Development Kit)/ Cloud9 / SDK
+
+Operations job: 
+AWS Engineer / CLoud engineer / SysOps Administrator / Cloud NEtwork engineer / Cloud DBA / Cloud Storage admin / AWS Security specialist..!!
+
+--> Do we need to learn DevOps along with AWS..??
+ANS : No.. AWS DevOps tools.. Code Commit (git), Code build (maven), Codedeploy, Pipeline (Jenkins)... FREE Jenkins and GIT Course..!! (Pre Recorded)
+
+--> DO we have any project..?? Is it hands-on..??
+ANS : 95% Hands-On.. Scenario based..!!
+
+Migration : SMS (Server Migration Service) :Azure --> AWS, GCP --> AWS (Pre Recorded Video)
+
+--> Live environment review..!! 
+--> Simulated to real env..!!
+
+--> Am a .net/java/python/****, WIll this course helps me..!!
+ANS : Added advantage to your profile, You can promote yourself as AWS Developer..
+
+--> 700/800 Certification questions am gonna share.
+
+--> You can add Min 3-4 yrs experience to your profile once you complete the course and task..!!
+
+Course Duration : 35-40 Sessions..!! 
+
+9 AM IST - 10 AM IST.. 
+
+
+Dear student any non technical doubts about fees Payment procedure  any enquiries please contact our NARESH it team member
+Mr.Nagababu
+9553377893
+
+
+____________________________________________________________________________________
+D: 15/06/2021
+
+
+Deployment models of Cloud computing : 
+
+Public Cloud : Open for everyone.. Maintenance: Service Provider.. : Aws, azure..
+
+Private Cloud : Dedicated for one organization.. Main: Your org / 3rd party org
+
+Hybrid Cloud : COmbination of multiple Cloud platforms.. Public + Public / Public + private.. 
+
+AWS : Web Server .. Azure : ms sql : We can enable communication azure+aws --> VPN : OpenVPN
+On-Premise : AWS : VPN / Direct Connect.. DataSync.. Storage gateway..
+
+Community Cloud : Group of organizations build the infra.. Group of org uses the infra.. 
+	Main: 3rd Party / One of the Org from community..
+
+____
+
+Service Models of Cloud COmputing : 
+
+Traditional / On-Premise mechanism : 50M 		: GMail
+
+Application			--> Delivered to end customer
+data		--> SA
+runtime
+Middleware	--> Application administrator
+Operating systems-> System Administrator
+virtualisation	--> Vmware/hyper-v/citrix
+Servers		--> System Engineers
+Database	--> DBA
+Storage		--> Storage admin
+Network		--> network admin
+
+
+Testing
+backup
+Security
+Power
+Monitoring
+Cooling
+Physical security
+
+
+SaaS : Software as a Service : 
+PaaS : Platform as a Service : 
+IaaS : Infrastructure as a Service : 
+
+Requirement : Build a website and deliver to everyone..!!!!
+
+Starving : Have Biryani : 
+
+--> Home delivery : SaaS
+--> Go to restro : PaaS
+--> Cook biryani at home : IaaS
+--> Purchase all the components and cook biryani : On-Premise
+
+
+________________________________________________________________________________________
+
+D: 16/06/2021
+
+Requirement : Build a website and deliver to everyone..!!!!
+
+SaaS : Software as a Service : Lightsail
+PaaS : Platform as a Service : Elastic Beanstalk
+IaaS : Infrastructure as a Service : EC2
+
+How much effort you need to put..??
+
+
+CLoud Computing : 
+Defination
+Advantages
+Deployment models
+Service model of CC
+
+Security : Both parties.
+
+Security Model : Shared Responsbile security models.
+
+Security OF the Cloud : AWS (DC, Physical security)
+Security IN the Cloud : Customer (Encrypting, Securing, Not making public)
+
+_______________________________________________
+
+AWS : Amazon Web Services : Leading cloud computing service provider.
+--> Storage
+--> Network
+--> Database
+--> COmpute
+--> Security Services
+--> Monitoring
+--> Architectural reviews
+--> AI / ML / Quantom / IoT / Robotic / Satilite
+
+AWS : 
+2004 : Chris Pinkman and Benjamin : WHitepapers  : SQS
+2006 : AWS Oficially launched
+AWS Annual conference : Re:Invent (Nov-Dec), Los Vegas
+Amazon, AWS CEO : Andy Jessy
+
+_______________________________________________________________________________________
+
+D: 17/06/2021
+
+AWS Global Infrastructure : 25 Regions and 81 AZs across the globe.
+
+Region : No Technical defination, Physical location / Geographical location. Thay named regions with Famous cities/ financial capitals. Every region contains min of 2 AZs.
+25 Regions..
+
+Mumbai : ap-south-1 
+N Virginia : us-east-1
+Frankfruit : eu-central-1
+
+Hyderabad : ap-south-2 (ap-south-2a/2b/2c) Mid of 2022
+
+China : 2 Regions : Bejing, Ninxia
+us-gov-cloud : 2 regions : sign-up
+
+AZs / Availability Zones : Data Center or combination of Multiple DCs also. Designed to isolate the individual resource failures. 81 AZs across the globe. 
+
+Mumbai : 3 AZs : ap-south-1a , ap-south-1b, ap-south-1c
+
+Edge Location / PoP Locations : CloudFront : 250+ edge locations across the globe.. 
+Perorm "Invalidation" to clear the cache from Edge locations and delivers the updated dat.
+
+CDN Services : Content Delivery Network : Akamai, Cloudflair..
+
+__________________
+
+https://aws.amazon.com/free
+
+12 Months Free : ec2, s3, rds, elb
+Always Free : Dynamodb, sqs, sns
+Limited Free trail : Lightsail (30 days), Directory services (30 Days)
+
+
+EC2 : Elastic Compute Cloud : Launch the servers/Instances.. : t2.micro 750 Hrs/Month Free Tier..
+24 x 31 = 744 hrs..	--> 1 Server Entire Month (6 Spare hrs)
+
+S3 : Simple Storage Service : Object based storage solution.. : 5 gb standard, 2000 PUT, 20k GET
+
+RDS : Relational Database Service : db.t2.micro 750 Hrs/Month..
+
+
+________________________________________________________________________________________
+
+D: 18/06/2021
+
+https://aws.amazon.com/free
+
+Signup Information
+
+Email ID : 		--> root user (highest Permissions)			
+Password & Confirm pwd	
+Account Name : ClientName / Environment Name
+
+COntact Information : 						
+--> Business : 
+--> Personal : Choose this..
+
+Name, COntact, Add..
+
+Payment Information : Validate our payment information AWS Deducts 2 INR.. Refund..
+CC / DC :  Visa / Master Card / AMEX / DIscovery   
+Auto Deducts : NO						
+
+Confirm Your Identity : 
+--> text Msg : ENter ph number --> Enter the captch --> Enter the Pin
+--> Voice call : Enter ph number --> IVR --> XXXX --> Answer the call enter 4 digit pin.
+
+
+
+Choose a Support Plan : BASIC SUPPORT PLAN
+
+1. Account and Billing related 
+2. Service Limit Increase
+3. Technical Assistance
+
+1 & 2 ==> Free For all SP, 24x7 Support
+
+Trusted Advisor : Checks ur AWS accounts and suggest us to fix issues (FT, Pricing, HA, Service Limits, Security)
+PHD : Personal health Dashboard : Service distruptions / Operations issues that effecting our resources.. 
+
+Basic SP : Free.. No Technical Support.. 7 Core area checks.. 
+technical assistance : AWS Developer forums, Knowledge base articles.
+
+Developer SP : Price : 29$/Month ... 
+3 ==> Local business hours support from Cloud support associate.. 
+Unlimited Cases / 1 Primary contact can raise cases. 7 Core area checks.. 
+Seviarity : General Guidelines < 24 Hrs
+	System impaired < 12 Hrs
+
+Business SP : Price : 100 $/Month ... 
+24x7 Phone, Emil, chat support from Cloud Support Engineer.. 
+Unlimited Cases / Any contact can raise cases (IAM User). Full trusted Advisor checks.. 
+Seviarity : General Guidelines < 24 Hrs
+	System impaired : < 12 Hrs
+	Production system impaired : < 4 Hrs
+	production System Down : < 1 Hr
+
+Enterpeise SP : 15,000 $/Month ... 
+24x7 Phone, Email, chat support from Sr. Cloud Support Engineer.. 
+Unlimited Cases / Any contact can raise cases (IAM User). Full trusted Advisor checks.. 
+Seviarity : General Guidelines < 24 Hrs
+	System impaired : < 12 Hrs
+	Production system impaired : < 4 Hrs
+	production System Down : < 1 Hr
+	Business Critical system down : < 15
+--> Annual Operational and Architectural reviews 
+--> Dedicated TAM (Technical Account Manager)
+
+Login : https://aws.amazon.com/console/
+
+--> Enable Free Tier Alerts. : Billing dashboard --> Billing Preferences --> Enable.
+
+________________________________________________________________________________________
+
+D: 21/06/2021
+
+Root user : Highest permissions on our AWS account. 
+ENable MFA : Multi Factor Authentication : 
+
+Virtual MFA : smartphone /laptop : Microsoft authenticator / Google authenticaor
+Hardware MFA : need to purchase physical device : 
+Yuby2key / u2f key : 
+
+
+Navigate to "My Billing dashboard" --> "Billing preferences" --> "Receive Free Tier Usage Alerts" --> Enter valid email and "save".
+
+Billing Alarm : Enable billing alarm on your aws account. 
+
+
+_____
+
+root user : 
+
+IAM user : Identity and access management : We can create users, Groups and manage the permisisons. 
+
+AWS Account : root user (Email and Password)
+
+Least privilages mechanism : Provide the permissions to perform the job / activity.
+
+Storage : Full Permissions on S3 : IAM User : 
+Compute : Full Permissions on EC2 : IAM User : 
+Lead : Full Permissions on aws services : IAM User : 
+
+
+IAM User : 
+Step 1 : Choose Username 
+Access type : 
+--> Management console : GUI : username, Pwd & Sign-In URL 
+--> programatic Access : CLI : AccessKeyID & SecretAccessKey
+
+Step 2 : Allocate permissions 
+--> Create a Group, Associate permisisons at group level, Add user to group. 
+--> Copy permissions from an Existing users.
+--> Attach policy directly on user.
+
+
+Policy : Set of permissions written in JSON format.
+
+Step 3 : Associate / add required tags (optional)
+
+Step 4 : Review and create.
+
+
+https://501170964283.signin.aws.amazon.com/console 
+https://avizway9.signin.aws.amazon.com/console
+
+
+Storage : Full Permissions on S3 : IAM User : s3admin
+Compute : Full Permissions on EC2 : IAM User : ec2admin 
+Lead : Full Permissions on aws services : IAM User : 
+
+
+S3 : Storage Service in AWS : Buckets and upload data to bucket.
+ec2 : Elastic Compute Cloud : We can launch servers.. 
+
+
+Task : Create an IAM User with "AdministratorAccess", Login and verify his access to "Billing dashboard", Try to change the "Support plan".
+
+Task 2 : Create an IAM user S3 Full Access and EC2 Full Access.
+
+________________________________________________________________________________________
+
+D: 22/06/2021
+
+Login as root user .. Myaccount page --> "IAM User and Role Access to Billing Information" --> Activate this feature.
+
+Policy : Set of permissions on AWS environment. Written in JSON format.
+
+--> AWS Managed policy : Based on Services
+--> AWS Managed - Job Funtion policy : Based on Standard Job Roles
+--> Customer Managed policy : Based customer/custom requirements we. 
+
+
+AdministratorAccess : Provides full access to AWS services and resources.
+PowerUserAccess : Provides full access to AWS services and resources, but does not allow management of Users and groups. (AdminAccess - IAM)
+
+*** DENY will always have HIGHEST PRIORITY.
+
+Implicit allow : IAM user have Permissions on S3 ==> he can access only s3.
+Explicit Deny : at any level (user/group/resource) if you apply Deny, Deny will take effect. 
+
+Inline policy : We can apply policy to only this particular resource. and it's not a reusable policy. 
+_____________________
+
+Permissions Boundary : Set a permissions boundary to control the maximum permissions this user can have.
+
+
+Task : Create a policy to Acivate MFA. If we associate this policy to any of the IAM user, he should activate MFA himself. 
+
+_______________________________________________________________________________________
+
+D: 23/06/2021
+
+Credentials report : Gives report on user last logein, password reset, MFA activated / not..
+
+Cloudtrail : Enabled by defautly. Can store last 90 days activities. 
+Config : Inventory services on our resources. : Resource Timeline. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

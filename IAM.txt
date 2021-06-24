@@ -1,0 +1,244 @@
+D: 18/06/2021
+
+https://aws.amazon.com/free
+
+Signup Information
+
+Email ID : 		--> root user (highest Permissions)			
+Password & Confirm pwd	
+Account Name : ClientName / Environment Name
+
+COntact Information : 						
+--> Business : 
+--> Personal : Choose this..
+
+Name, COntact, Add..
+
+Payment Information : Validate our payment information AWS Deducts 2 INR.. Refund..
+CC / DC :  Visa / Master Card / AMEX / DIscovery   
+Auto Deducts : NO						
+
+Confirm Your Identity : 
+--> text Msg : ENter ph number --> Enter the captch --> Enter the Pin
+--> Voice call : Enter ph number --> IVR --> XXXX --> Answer the call enter 4 digit pin.
+
+
+
+Choose a Support Plan : BASIC SUPPORT PLAN
+
+1. Account and Billing related 
+2. Service Limit Increase
+3. Technical Assistance
+
+1 & 2 ==> Free For all SP, 24x7 Support
+
+Trusted Advisor : Checks ur AWS accounts and suggest us to fix issues (FT, Pricing, HA, Service Limits, Security)
+PHD : Personal health Dashboard : Service distruptions / Operations issues that effecting our resources.. 
+
+Basic SP : Free.. No Technical Support.. 7 Core area checks.. 
+technical assistance : AWS Developer forums, Knowledge base articles.
+
+Developer SP : Price : 29$/Month ... 
+3 ==> Local business hours support from Cloud support associate.. 
+Unlimited Cases / 1 Primary contact can raise cases. 7 Core area checks.. 
+Seviarity : General Guidelines < 24 Hrs
+	System impaired < 12 Hrs
+
+Business SP : Price : 100 $/Month ... 
+24x7 Phone, Emil, chat support from Cloud Support Engineer.. 
+Unlimited Cases / Any contact can raise cases (IAM User). Full trusted Advisor checks.. 
+Seviarity : General Guidelines < 24 Hrs
+	System impaired : < 12 Hrs
+	Production system impaired : < 4 Hrs
+	production System Down : < 1 Hr
+
+Enterpeise SP : 15,000 $/Month ... 
+24x7 Phone, Email, chat support from Sr. Cloud Support Engineer.. 
+Unlimited Cases / Any contact can raise cases (IAM User). Full trusted Advisor checks.. 
+Seviarity : General Guidelines < 24 Hrs
+	System impaired : < 12 Hrs
+	Production system impaired : < 4 Hrs
+	production System Down : < 1 Hr
+	Business Critical system down : < 15
+--> Annual Operational and Architectural reviews 
+--> Dedicated TAM (Technical Account Manager)
+
+Login : https://aws.amazon.com/console/
+
+--> Enable Free Tier Alerts. : Billing dashboard --> Billing Preferences --> Enable.
+
+________________________________________________________________________________________
+
+D: 21/06/2021
+
+Root user : Highest permissions on our AWS account. 
+ENable MFA : Multi Factor Authentication : 
+
+Virtual MFA : smartphone /laptop : Microsoft authenticator / Google authenticaor
+Hardware MFA : need to purchase physical device : 
+Yuby2key / u2f key : 
+
+
+Navigate to "My Billing dashboard" --> "Billing preferences" --> "Receive Free Tier Usage Alerts" --> Enter valid email and "save".
+
+Billing Alarm : Enable billing alarm on your aws account. 
+
+
+_____
+
+root user : 
+
+IAM user : Identity and access management : We can create users, Groups and manage the permisisons. 
+
+AWS Account : root user (Email and Password)
+
+Least privilages mechanism : Provide the permissions to perform the job / activity.
+
+Storage : Full Permissions on S3 : IAM User : 
+Compute : Full Permissions on EC2 : IAM User : 
+Lead : Full Permissions on aws services : IAM User : 
+
+
+IAM User : 
+Step 1 : Choose Username 
+Access type : 
+--> Management console : GUI : username, Pwd & Sign-In URL 
+--> programatic Access : CLI : AccessKeyID & SecretAccessKey
+
+Step 2 : Allocate permissions 
+--> Create a Group, Associate permisisons at group level, Add user to group. 
+--> Copy permissions from an Existing users.
+--> Attach policy directly on user.
+
+
+Policy : Set of permissions written in JSON format.
+
+Step 3 : Associate / add required tags (optional)
+
+Step 4 : Review and create.
+
+
+https://501170964283.signin.aws.amazon.com/console 
+https://avizway9.signin.aws.amazon.com/console
+
+
+Storage : Full Permissions on S3 : IAM User : s3admin
+Compute : Full Permissions on EC2 : IAM User : ec2admin 
+Lead : Full Permissions on aws services : IAM User : 
+
+
+S3 : Storage Service in AWS : Buckets and upload data to bucket.
+ec2 : Elastic Compute Cloud : We can launch servers.. 
+
+
+Task : Create an IAM User with "AdministratorAccess", Login and verify his access to "Billing dashboard", Try to change the "Support plan".
+
+Task 2 : Create an IAM user S3 Full Access and EC2 Full Access.
+
+________________________________________________________________________________________
+
+D: 22/06/2021
+
+Login as root user .. Myaccount page --> "IAM User and Role Access to Billing Information" --> Activate this feature.
+
+Policy : Set of permissions on AWS environment. Written in JSON format.
+
+--> AWS Managed policy : Based on Services
+--> AWS Managed - Job Funtion policy : Based on Standard Job Roles
+--> Customer Managed policy : Based customer/custom requirements we. 
+
+
+AdministratorAccess : Provides full access to AWS services and resources.
+PowerUserAccess : Provides full access to AWS services and resources, but does not allow management of Users and groups. (AdminAccess - IAM)
+
+*** DENY will always have HIGHEST PRIORITY.
+
+Implicit allow : IAM user have Permissions on S3 ==> he can access only s3.
+Explicit Deny : at any level (user/group/resource) if you apply Deny, Deny will take effect. 
+
+Inline policy : We can apply policy to only this particular resource. and it's not a reusable policy. 
+_____________________
+
+Permissions Boundary : Set a permissions boundary to control the maximum permissions this user can have.
+
+
+Task : Create a policy to Acivate MFA. If we associate this policy to any of the IAM user, he should activate MFA himself. 
+
+_______________________________________________________________________________________
+
+D: 23/06/2021
+
+Credentials report : Gives report on user last logein, password reset, MFA activated / not..
+
+Cloudtrail : Enabled by defautly. Can store last 90 days activities. 
+Config : Inventory services on our resources. : Resource Timeline. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

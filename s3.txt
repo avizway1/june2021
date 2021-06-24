@@ -1,0 +1,157 @@
+S3 : Simple Storage Service : Object based storage solution. 
+
+Object based storage : We can store flat files. : S3
+Block Based storage : We can install the applications and run OS. : EBS, Instance Store
+Storage over the network : SAN/NAS : Storage device runs over the network, can be accesable from multiple resources. : EFS, FSx
+
+--> We store all the data in Buckets. 
+--> Defaultly we can create 100 buckets in an aws account. (Soft Limit)
+--> Bucket Naming standards
+	--> Min Char 3 , Max 63 char
+	--> Should not contain Upper case letter, Special charater
+	--> Should not start with . / end with . / no ..
+	--> Should not resemble IP address format.
+--> S3 is a global service, Does not required region selection. (IAM also global service)
+--> We have unlimited storage in s3.
+--> We can upload objects into the bucket.
+--> Min Object size : 0 bytes.. Max Object size : 5 TB
+
+S3 Standard : Default storage class : Designed to store Frequently accessed data.. Data will be available immedeatly.. 
+Replicates in AZs : >=3 AZ
+Availability : 99.99 % 
+Durability : 99.999999999% 
+
+S3 Standard-IA : Designed to store infrquently accessed data.. Data will be available immedeatly.. 
+Replicates in AZs : >=3 AZ
+Availability : 99.9 % 
+Durability : 99.999999999% 
+
+S3 OneZone-IA : Designed to store infrquently accessed data.. Data will be available immedeatly.. Less imp data.. 
+Replicates in AZs : 1 AZ
+Availability : 99.5 % 
+Durability : 99.999999999%
+
+S3 Glacier : Designed to archieve the data for longer durations.. Data will not be available immedeatly.. We need to initialise data restoration to open/view the data.. 
+Restoration will take min Minutes-Hrs duration..
+Replicates in AZs : >=3 AZ
+Availability : 99.9 % 
+Durability : 99.999999999%
+
+Standard retrival : 3-5 hrs to restore the data
+Expedation Retrival : 3-5 Min
+Bulk retrival : Hrs
+
+S3 Glacier Deep Archieve : Designed to archieve the data for longer durations.. Data will not be available immedeatly.. We need to initialise data restoration to open/view the data.. Restoration will take min Hrs duration..
+Replicates in AZs : >=3 AZ
+Availability : 99.99 % 
+Durability : 99.999999999%
+
+S3 Intelligent tier : If we have unknown access patterns, not sure about the data storage classes.. Data will be available immedeatly. 
+Replicates in AZs : >=3 AZ
+Availability : 99.99 % 
+Durability : 99.999999999%
+
+
+FREE TIER : 5 gb Standard storage class.. 2000 PUT(upload).. 20,000 GET Operations..
+
+Pricing : Size of the data and Data requests..
+
+______________________________________________________________________________________
+
+D: 24/06/2021
+
+
+https://www.udemy.com/course/linuxwithavinash/?couponCode=JULY24
+https://www.udemy.com/course/jenkinswithavinash/?couponCode=JULY24
+https://www.udemy.com/course/gitbyavinash/?referralCode=F7D62CDB4D61EADE1CC7
+_________
+Slack : https://join.slack.com/t/awswithavinash/shared_invite/zt-ozg7f9gx-lGdrFMlaOAc_BiPl4V~f4w
+
+_________________________
+
+How to make data publicly accesable.
+
+Block Public Access settings for this bucket : True
+
+
+Tags : 
+Name : 
+Application : APP X
+Project : POC
+Cost Center : AAZAA
+
+
+Block Public Access settings for this account : Account Level
+Block public access (bucket settings) : Bucket Level
+
+Virtual path : 
+https://july2021.s3.ap-south-1.amazonaws.com/s3.txt
+https://bucketname.s3.regioncode.amazonaws.com/objectname
+
+If we have . in the bucket name we need to use standard URL : 
+https://s3.regioncode.amazonaws.com/bucketname/objectname
+https://s3.ap-south-1.amazonaws.com/july.2021/s3.txt
+
+______
+
+Versioning : 
+
+Versioning : HIDE
+--> If you delete any object, we will get the Delete Marker. Delete the "Delate Marker" to get the object back to s3 bucket.
+
+Versioning : SHOW
+--> If we delete any object, it deletes permanently.
+
+While deleting : If you type
+Delete : Creates a Delete Marker.
+Permanently delete : Gone
+
+_____
+
+Server access logging : We can enable logs at bucket level. 
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html
+
+**Cloudtrail : Data Events : Enable logging for all current buckets/ FUture Buckets.
+
+Storage classes
+Versioning
+Lifecycle management rule : 
+Crr / SRR : 
+*****
+Encryption : 
+Bucket policy : 
+*****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
