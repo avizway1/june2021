@@ -118,14 +118,29 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html
 
 **Cloudtrail : Data Events : Enable logging for all current buckets/ FUture Buckets.
 
-Storage classes
-Versioning
-Lifecycle management rule : 
-Crr / SRR : 
-*****
-Encryption : 
-Bucket policy : 
-*****
+_______________________________________________________________________________________
+D: 25/06/2021
+
+Life CYcle management Rule : 
+--> Apply for entire bucket.
+--> Limit the scope : Using "Prefixes" / Tags.
+
+________
+
+SRR / CRR : Same/Cross region replication 
+--> Versioning must be enabled in source bucket and destination bucket.
+--> If source and destination buckets are in same region we call it as "SRR"
+--> If source and destination buckets are in different region we call it as "CRR"
+--> Before enabling replication, Whatever the data we have in souce bucket won't replicate automatically. All the future / subsequent uploads will replicate. 
+
+RTC : Replication Time Control replicates 99.99% of new objects within 15 minutes.
+
+
+
+
+
+
+
 
 
 
