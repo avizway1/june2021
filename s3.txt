@@ -135,6 +135,62 @@ SRR / CRR : Same/Cross region replication
 
 RTC : Replication Time Control replicates 99.99% of new objects within 15 minutes.
 
+_______________________________________________________________________________________
+
+D: 26/06/2021
+
+Encryption : 
+
+--> In-Transit : SSL / TLS
+
+--> At-Rest / SSE (Server Side Encryption)
+
+	--> SSE-S3 : S3 Generates and Manages the Key material. Whoever have valid access on s3 platform, they can decrypt the data. No additional permissions required on encryption keys.
+	--> SSE-KMS (Key Management Service) : 
+	--> AWS managed key (aws/s3) : key materail generated and Managed by KMS Service. Whoever have valid access on s3 platform, they can decrypt the data. No additional permissions required on encryption keys.
+	--> SSE-KMS (Customer managed keys) : key materail generated and Managed by KMS Service. We need to provide permissions on encyrion key to the IAM user/role to decrypt the data. (NO FREE TIER ELIGIBILITY).
+
+Symmetric : A single encryption key that is used for both encrypt and decrypt operations
+Asymmetric : A public and private key pair that can be used for encrypt/decrypt or sign/verify operations
+
+Alias/Name : 
+key administrative permissions : WHo can administrate/manage the key.
+Key usage permissions : Who can use this key.
+
+	--> SSE-C (Customer Managed) : key materail generated and Managed by US/End CUstomer, We need to zip the key material and upload it to AWS KMS, We can use as regular KMS key. We need to provide permissions on encyrion key to the IAM user/role to decrypt the data. (NO FREE TIER ELIGIBILITY).
+
+--> CSE (Client Side Encryption) : Whenever customer is not ready to send unencrypted data and Key material.. Customer is responsible for this encryption.
+
+____________________
+
+Static website hosting : Host static website. 
+--> Domain name should be same as your bucket name.
+--> We should provide atleast read only access on all the data you want to deliver as website.
+--> We can configure redirections.
+
+http://avinash.co.in.s3-website.ap-south-1.amazonaws.com
+
+http status codes:
+2XX : OK/Success
+3XX : Redirection errors
+4XX : Client Side error
+5XX : Server Side error
+
+
+https://www.free-css.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
