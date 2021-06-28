@@ -179,20 +179,57 @@ http status codes:
 
 https://www.free-css.com/
 
+_______________________________________________________________________________________
+
+D: 28/06/2021
+
+Bucket policy : 
+
+Iamuser 1 : Full ACcess on s3, Deny upload on a bucket..!!
+Iamuser 2 : Full ACcess on s3 
+
+arn : Amazon resource name
+
+Effect : Allow  Deny			==> Deny
+Principal : To what user/group		==> arn:aws:iam::501170964283:user/user1
+Actions : what action you want to take effect ==> PUT Object
+Resource arn : S3 bucket arn 		==> arn:aws:s3:::avinash.bucket/*
+
+Bucket level operation : arn:aws:s3:::avinash.bucket
+Object level operation : arn:aws:s3:::avinash.bucket/*
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html
+https://awspolicygen.s3.amazonaws.com/policygen.html
 
 
+Intelligent-Tiering Archive configurations : 
+
+Archive Access tier : When enabled, Intelligent-Tiering will automatically move objects that haven’t been accessed for a minimum of 90 days to the Archive Access tier.
+
+Deep Archive Access tier : When enabled, Intelligent-Tiering will automatically move objects that haven’t been accessed for a minimum of 180 days to the Deep Archive Access tier.
+
+______
+
+Event notifications : 
+
+lambda : Serverless : 
+SQS Service : msg Queue service : 
+SNS : Simple Notification Service : Explain : 
+
+--> SNS topic and s3 bucket should be in same region.
+--> S3 should have valid permissions to deliver msg via sns.
+
+____
+Transfer acceleration : Helps us to upload/download the data via edge locations. 
+
+https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html?region=us-east-1&origBucketName=avinashaws2
+
+___
+
+Requester pays : When enabled, the requester pays for requests and data transfer costs, and anonymous access to this bucket is disabled.
 
 
-
-
-
-
-
-
-
-
-
-
+cli/ 3rd party apps
 
 
 
