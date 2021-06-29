@@ -228,8 +228,84 @@ ___
 
 Requester pays : When enabled, the requester pays for requests and data transfer costs, and anonymous access to this bucket is disabled.
 
+_______________________________________________________________________________________
 
-cli/ 3rd party apps
+D: 29/06/2021
+
+Object Lock : 
+--> versioning must be enabled.
+
+Governance : Users with specific IAM permissions can overwrite or delete protected object versions during the retention period.
+
+Compliance : No users can overwrite or delete protected object versions during the retention period.
+
+____
+Metrics : Cloudwatch : Monitoring service in AWS.. 
+___
+
+Storage Class Analysis : Analyze storage access patterns to help you decide when to transition objects to the appropriate storage class.
+
+___
+
+Inventory configurations : 
+
+__
+
+Cross-origin resource sharing (CORS) : 
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html
+
+________________________
+
+AWS Snowcone : 8 TB 			: $60/Job, $6 / day (5 Days)
+AWS Snowball edge : 40 - 100 TB		: $500/Job, $50 / Day (10 Days)
+AWS Snowmobile : PB Scale container
+
+____
+
+3rd party tools for AWS S3 : Cloudberry explorer, S3 Browser, WinSCP, CYberduck..
+
+https://www.msp360.com/explorer/windows/amazon-s3.aspx
+
+__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
