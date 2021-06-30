@@ -1,0 +1,38 @@
+EC2 : Elastic Compute Cloud :  Instance = Server
+
+Pay-as-you-go : 
+
+
+On-Demand ec2 instance : When we have Unpredictable workloads, Testing for the first time.. 
+Pricing : /Sec (Min of 60 Sec) / /hr
+__
+
+Reserved ec2 Instances : When our workload is stable and predictable.. For longer durations.. We need to reserve the capacity for 1 Yr/3 yrs.
+
+	Standard RI : We cannot change the configuration during the period.
+	COnvertable RI : We can change the configuration. (upgrade)
+	Scheduled RI : If we have persistent / repeated requests. 
+Pricing : 
+	Full upfront : Pay 100% as onetime.
+	Partial upfront : Pay 30-50% as onetime, THen remaining amount on monthly basis with redused hrly price.
+	No Upfront : Pay everything monthly basis.
+
+--> We can sell RI instances in AWS MarketPlace.
+__
+Spot ec2 instances : When we have flexible start/stop durations.. No critical data/application is delivering.. Test/UAT.. Bid your price against the aws pricing. 
+
+--> If your quoted price is more than or equal to aws price, we will get an EC2 instance.
+--> If price increased aws will Terminate our ec2 instance.
+
+If price increased AWS termnated instance, we need to pay only completed billing hours.
+If price not increased YOU termnated instance, we need to pay for full usage hours.
+
+1 hr 30 Min : AWS terminated : 1 Hr
+1 Hr 30 Min : YOU terminated : 1 Hr 30 Min
+
+
+
+
+
+
+

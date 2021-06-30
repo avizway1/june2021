@@ -266,7 +266,39 @@ ____
 
 https://www.msp360.com/explorer/windows/amazon-s3.aspx
 
-__
+_______________________________________________________________________________________
+
+D: 30/06/2021
+
+Bucket/objects : 
+
+3500 PUT/Sec
+5500 GET/Sec
+ 
+--> Try to increase randomness/uniqueness in object names.
+--> Use prefix mechanism 
+
+10 prefix : 35000 PUT, 55000 GET / Sec
+
+___
+
+Consistency Model : 
+For PUT of new object : Read after write consistency 
+Overwrite PUT and DELETE : Eventual COnsistency
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
