@@ -218,13 +218,75 @@ Instance 1 volume need to share with everyone.. --> Create a snapshot --> Share 
 MultiAttach : https://www.youtube.com/watch?v=2j8R3ajSo3s
 
 
-
-
 Task 1 : Launch an ec2 instance in ap-south-1a.. Create a "New volume with 1 gb size" in ap-south-1a and attach this volume to ec2 instance. Goto AWS console "Increase the volume size to 2 GB", make this 2gb volume available at OS level.
 
 Task 2 : Launch an ec2 instance in ap-south-1a... Another ec2 instance in ap-south-1b..
 Create a volume in ap-south-1a.. Attach it to "1a instance" and make it available.. Write some data into it..
 Make Same volume available to "1b instance"..!!
+
+_________________________________________________________________________________________
+
+D: 06/07/2021
+
+0.0.0.0/0	--> IPv4
+::/0		--> IPv6
+
+Change the ec2 instance configuration/type..!!
+--> First STOP the ec2 instance, Modify the instance type, Start the instance. 
+
+Maintenace activities: Windows : Saturday, 07:00 AM IST
+
+
+3.108.56.48	--> Current public
+13.233.252.182	--> 
+
+WIndows : IIS : Server Manager --> Add Roles and features --> Web Server (IIS) --> Install
+
+copy all the webpages : c:/inetpub/wwwroot/
+
+
+http://localhost/ or http://127.0.0.1/
+
+** Security Groups : http / https traffic.. 
+--> CHanges to the Security group takes effect immedeately. (No need to stop/start the instance). 
+--> Security group won't support DENY. It allow the traffic. 
+--> Security groups are stateful. We need to take care about INBOUND RULES only. 
+--> All the Outbound traffic is allowed for every security groups. 
+
+
+EIP : Elastic IP Address : Dedicated IP address we will get from AWS. We can associate this to an ec2 instance. When Instance is STOP/START, this IP won't chnage.
+(COST US : NO FREE TIER ELIGIBILITY, EVEN if you generated kept it idle)
+
+ENI : Elastic Network Interface : NIC CARD for Instance.. : 
+--> EC2 instance and ENI should be in same AZ.
+
+run --> ncpa.cpl --> enter
+
+
+Tenancy in AWS : 
+--> Shared Tenancy : Underlying hardware/resources will be shared with multiple AWS customers. 
+--> Dedicated Tenancy : Underlying hardware/resources will dedicatedly available to only one AWS customer. It won't shqare with any other.
+	--> Dedicated Instance : 
+	--> Dedicated Host : Host supports to launch multiple instances. Some applications required physical resources inforamtion to apply the licenses. 
+
+https://aws.amazon.com/ec2/dedicated-hosts/
+
+Whenever we launch an ec2 instance, 2 status checks will happen. 
+-> System Status check : H/w is healtlhy or not at Physical resource level. (STOP/START)
+-> Instane status check : OS level issues.
+
+
+Task : Launch a windows ec2 instance, make it as "Web Server", Test the "Security groups".
+
+
+
+
+
+
+
+
+
+
 
 
 
