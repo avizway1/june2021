@@ -1,0 +1,60 @@
+1. D, E. Objects are stored in buckets, and objects contain both data and metadata.
+
+2. B, D. Amazon S3 cannot be mounted to an Amazon EC2 instance like a file system and
+should not serve as primary database storage.
+
+3. A, B, D. C and E are incorrect—objects are private by default, and storage in a bucket does not need to be pre-allocated.
+
+4. B, C, E. Static website hosting does not restrict data access, and neither does an Amazon S3 lifecycle policy.
+
+5. C, E. Versioning protects data against inadvertent or intentional deletion by storing all versions of the object, and MFA Delete requires a one-time code from a Multi-Factor
+Authentication (MFA) device to delete objects. Cross-region replication and migration to
+the Amazon Glacier storage class do not protect against deletion. Vault locks are a
+feature of Amazon Glacier, not a feature of Amazon S3.
+
+6. C. Migrating the data to Amazon S3 Standard-IA after 30 days using a lifecycle policy is correct. Amazon S3 RRS should only be used for easily replicated data, not critical data. Migration to Amazon Glacier might minimize storage costs if retrievals are infrequent, but documents would not be available in minutes when needed.
+
+7. B. Data is automatically replicated within a region. Replication to other regions and
+versioning are optional. Amazon S3 data is not backed up to tape.
+
+8. C. In a URL, the bucket name precedes the string “s3.amazonaws.com/,” and the object
+key is everything after that. There is no folder structure in Amazon S3.
+
+9. C. Amazon S3 server access logs store a record of what requestor accessed the objects in your bucket, including the requesting IP address.
+
+10. B, C. Cross-region replication can help lower latency and satisfy compliance
+requirements on distance. Amazon S3 is designed for eleven nines durability for objects
+in a single region, so a second region does not significantly increase durability. Crossregion replication does not protect against accidental deletion.
+
+11. C. If data must be encrypted before being sent to Amazon S3, client-side encryption must be used.
+
+12. B. Amazon S3 scales automatically, but for request rates over 100 GETS per second, it
+helps to make sure there is some randomness in the key space. Replication and logging
+will not affect performance or scalability. Using sequential key names could have a
+negative effect on performance or scalability.
+
+13. A, D. You must enable versioning before you can enable cross-region replication, and
+Amazon S3 must have IAM permissions to perform the replication. Lifecycle rules
+migrate data from one storage class to another, not from one bucket to another. Static
+website hosting is not a prerequisite for replication.
+
+14. B. Amazon S3 is the most cost effective storage on AWS, and lifecycle policies are a
+simple and effective feature to address the business requirements.
+
+15. B, C, E. Amazon S3 bucket policies cannot specify a company name or a country or origin, but they can specify request IP range, AWS account, and a prefix for objects that can be accessed.
+
+16. B, C. Amazon S3 provides read-after-write consistency for PUTs to new objects (new
+key), but eventual consistency for GETs and DELETEs of existing objects (existing key).
+
+17. A, B, D. A, B, and D are required, and normally you also set a friendly CNAME to the
+bucket URL. Amazon S3 does not support FTP transfers, and HTTP does not need to be
+enabled.
+
+18. B. Pre-signed URLs allow you to grant time-limited permission to download objects from an Amazon Simple Storage Service (Amazon S3) bucket. Static web hosting generally
+requires world-read access to all content. AWS IAM policies do not know who the
+authenticated users of the web app are. Logging can help track content loss, but not
+prevent it.
+
+19. A, C. Amazon Glacier is optimized for long-term archival storage and is not suited to data that needs immediate access or short-lived data that is erased within 90 days.
+
+20. C, D, E. Amazon Glacier stores data in archives, which are contained in vaults. Archives are identified by system-created archive IDs, not key names
