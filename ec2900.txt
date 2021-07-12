@@ -508,6 +508,7 @@ __________
 --> Increase the volume size the "Cosole" first, then execute the below command..!!
 
 We can use "xfsprogs" to increase existing volume size. 
+
 yum install xfsprogs
 
 --> xfs_growfs -d /volume-Mountpoint
@@ -529,6 +530,101 @@ Task 3 : Install webserver is Linux instance, Create a golden AMI of the linux i
 While launching instance from goldenAMi, In final step, choose a new keypair. try to login to instance with both the keypairs. 
 
 ______________________________________________________________________________________
+
+D: 12/07/2021
+
+Userdata : BSS : We can pass the commands while launching the instance. 
+
+cloud-init --> Linux
+Persist --> Windows
+
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+echo "<h1>Test Webpage</h1>" > /var/www/html/index.html
+
+Windows : <script> commands </script>   / <powershell> commands </powershell>
+
+tzutil /s "India Standard Time"
+
+______
+
+metadata : data about the data : We can get information about the running ec2 instance. 
+
+curl http://169.254.169.254/latest/meta-data/
+
+ami-id
+ami-launch-index
+ami-manifest-path
+block-device-mapping/
+events/
+hibernation/
+hostname
+identity-credentials/
+instance-action
+instance-id
+instance-life-cycle
+instance-type
+local-hostname
+local-ipv4
+mac
+metrics/
+network/
+placement/
+profile
+public-hostname
+public-ipv4
+public-keys/
+reservation-id
+security-groups
+
+________________________
+
+Load Balancers : 
+
+ec2 instance --> install application --> t2.micro --> Verify the metrics
+
+Cloudwatch : Monitors the resources.. Provides the graphs.. 
+
+Vertical Scaling : Upgrading same instance resources.. t2.micro --> c5.32xlarge
+Horizantal Scaling : Distribute application to multiple ec2 instances.. 
+
+Classic ELB : Layer 4/7 LB.. : Outdated.. : http, https, tcp, udp.. 
+Application ELB : Layer 7 ELB.. : http and https
+Network ELB : Layer 4 ELB.. : TCP, UDP, TLS 
+
+
+
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+echo "<h1>This is my WebServer 1</h1>" > /var/www/html/index.html
+
+
+For ELBs, We will get DNS Endpoint..
+Roundrobin algorithm.. 
+
+ELB Access Logs : Logging on ELB. Destinatio is s3. 
+
+____
+Task : Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB. 
+
+Task : Launch windows instance and setup IST using USerdata.
+
+Task : Launch a linux instance and while launching pass Userdata to make it as webserver.
+____
+
+
+
+
+
+
+
+
+
+
 
 
 
