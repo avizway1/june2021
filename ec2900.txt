@@ -595,7 +595,6 @@ Application ELB : Layer 7 ELB.. : http and https
 Network ELB : Layer 4 ELB.. : TCP, UDP, TLS 
 
 
-
 #!/bin/bash
 yum install httpd -y
 service httpd start
@@ -614,7 +613,32 @@ Task : Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB.
 Task : Launch windows instance and setup IST using USerdata.
 
 Task : Launch a linux instance and while launching pass Userdata to make it as webserver.
-____
+_________________________________________________________________________________________
+
+D: 13/07/2021
+
+Application ELB : 
+
+Application Load balancing algorithm : 
+--> Round robin
+--> Least outstanding requests
+
+--> We cannot assign a dedicated IP address for our Application ELB.
+
+
+Network ELB : TCP.. 
+--> Flow Hash algorithm.
+--> We CAN assign a dedicated IP address for our network ELB.
+
+750 Hrs/Month.. 
+
+Application LB Supports path based routing, also supports Microservices.
+
+
+Task : Practice application ELB with multiple TGs. (80, 8080, 8888)
+
+
+
 
 
 
