@@ -677,6 +677,82 @@ t3.micro..??? How you can do this with 0 downtime..!!
 Create a new launch configuration/template.. Associate this with ASG. Terminate the existing instance.. Now new instance will come with updated launch config settings.
 (Set Desired capacity to 2)..!!! 
 
+________________________________________________________________________________________
+
+D: 15/07/2021
+
+EFS : Elastic File System (File Share) : Centralised storage. 
+--> EFS works with NFS V4.1  (Network file system)
+--> At movement it supports only Linux OS.
+--> No Pre-Provisioning required. 
+
+
+2 ec2 instance --> Both as webservers --> for web content i'll take centralised location (EFS).. 
+
+Life Cycle Management : 
+EFS-Standard : 
+EFS-IA : 
+
+
+mkdir mountpoint
+
+/var/www/html/
+
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-a64b4e77.efs.ap-south-1.amazonaws.com:/ /var/www/html/
+
+fs-a64b4e77.efs.ap-south-1.amazonaws.com:/ /var/www/html nfs4 rw,relatime,vers=4.1,rsize=1048576,wsize=1048576,namlen=255,hard,noresvport,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=172.31.2.175,local_lock=none,addr=172.31.3.186 0 0
+
+_____
+
+For windows we have FSx.. 
+--> WOrks with SMB protocol (Server Message Block).
+
+__________________________________________________________
+
+We open ec2 instance ports to Entire network IP range (10.0.0.0/8)
+
+** SG Pipe mechanism.
+
+__________________________________________________________
+
+Cloudwatch : 
+Dashboard : Centrally monitor multiple resources. 
+
+
+Project X : 
+ec2, s3, elb, rds
+
+Cloudwatch events is now renamed as Amazon Events Bridge.
+
+
+Task : Stop your ec2 instance at a given time using Cloudwatch eventsbridge option. 
+
+Task 2 : Create an EFS.. and Launch multiple ec2 instance, Make it as webserver.. Mount efs to "web content path". 
+
+Task 3 : Create an Eventsbridge to take a snapshot Everymonth 16th 06:00 AM for a particular volume.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
