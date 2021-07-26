@@ -181,6 +181,21 @@ ACC ID		501170964283			501170964283
 
 8 Subnets in environment : 2 Public, 2 application (private), 2 Lambda (private), 2 Database/data (private)
 
+______________________________________________________________________________________
+
+D: 26/07/2021
+
+Endpoints : Private Links : It provides private connectivity to the resources. If we have any requirement, s3 rwquests/dynamodb req should not flow over the internet. 
+
+NAT Gateway Works with IPv4. 
+If our VPC is configured to use IPv6, Instead of NAT Gateway, We use "Egress Only Internet Gateways".
+
+
+Can we associate multiple CIDRs for our VPC.
+Yes.. 
+
+VPN COnnectivity : https://www.youtube.com/watch?v=JSTyjISscNg
+Transit Gateway : https://www.youtube.com/watch?v=xyLlMBHy2wc
 
 
 
