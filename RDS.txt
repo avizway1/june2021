@@ -85,6 +85,42 @@ Task : Launch an Mysql RDS db instance in CUstomVPCs Public SUbnet. Install Mysq
 
 _________________________________________________________________________________________
 
+D: 27/07/2021
+
+MultiAZ Deployment : Designed for Failover/FT purpose. 
+
+Automated Backup : This feature creates bacjup copies of our RDS instances automatically.  Based on retention period, we can have backup copies in our aws env to restore. 
+Disable : 0 
+Min : 1 Day
+Max : 35 Days
+
+--> When we are launching db instance, it creates a backup copy automatically, if this feature is enabled. 
+
+7 Days : AWS keeps last 7 days backup copies. 
+
+
+Enhanced Monitoring : 1 Sec
+Basic Monitoring : 5 Min
+
+____
+
+We have "Read Replica" option for scaling purpose. It works with "Master-Slave" mechanism.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
