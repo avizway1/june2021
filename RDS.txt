@@ -144,10 +144,57 @@ Task : launch an rds mysql db instance-1.. Now export/restore the shared db...
 
 Launch another rds mysql db instance-2.. Migrate all the datbases and tables from Db instance-1 to db instance-2 Using DMS (Database Migration service).
 
-
 1. Launch a DMS cluster
 2. Create endpoints (Source and destination) and test the endpoints
 3. Create a replciation job and verify.
+
+https://www.youtube.com/watch?v=iRhJDGp-ew8
+_______________________________________________________________________________________
+
+D: 29/07/2021
+
+Cloudtrail : Logging service. Enabled by default. it stores only last 90 days logs. Create a trail to s3 to store all logs for unlimited days. 
+
+• Management events provide information about management operations that are
+performed on resources in your AWS account. These are also known as control plane
+operations.
+
+• Data events provide information about the resource operations performed on or in a
+resource. These are also known as data plane operations. Data events are often high-volume activities. Data events can log s3, Dynamodb and Lambda services.
+
+• Insight Events : CloudTrail Insights events capture unusual activity in your AWS account. If you have Insights events enabled, and CloudTrail detects unusual activities.
+
+--> Cloudwatch Agent : We can install cw agent at os level, we can get custom logs of OS. 
+
+__________________________________
+
+Config : (Config works with Cloudtrail) : 
+
+AWS Trusted Advisor : Based on our support plan aws provide suggestions to fix 
+--> Cost Optimization : under utilised resources
+--> Performance : Over utilized resources
+--> Security
+--> Fault Tolerance
+--> Service Limits
+
+___
+
+ACM : Amazon Certificate Manager : Generate SSL/TLS certificates. 
+
+
+Task : Launch an ec2 instance in Mumbai region.. Migrate this ec2 instance from mumbai region to N Virginia region using "CloudEndure Migration".
+
+https://console.cloudendure.com/#/register/register
+
+GCP to AWS : https://www.youtube.com/watch?v=8xf1RpPdcHs
+VMWARE : https://www.youtube.com/watch?v=Vx9lRRY-shg
+
+
+Task 2 : Generate SSL cert and configure http to https redirection.
+https://raw.githubusercontent.com/avizway/redirection/master/httptohttps
+
+
+
 
 
 
