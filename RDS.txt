@@ -193,6 +193,37 @@ VMWARE : https://www.youtube.com/watch?v=Vx9lRRY-shg
 Task 2 : Generate SSL cert and configure http to https redirection.
 https://raw.githubusercontent.com/avizway/redirection/master/httptohttps
 
+_______________________________________________________________________________________
+
+D: 30/07/2021
+
+AWS Inspector : Inspector agent will perform the selected assesments to find common issues, network rechability and CIS benchmarks. 
+
+____
+
+Protect our resources from DDoS attack : AWS Shield Advanced ($3000/Month)  + ASG + CloudFront
+____
+
+WAF : Web Application Firewall : Application ELB, CLoudfront, API Gateway.. 
+
+____
+
+Cloudfront : AWS CDN Service : Content Delivery Network : 
+
+Origin : S3.. ELB.. Media Service.. 
+
+OAI : origin Access identity : 
+
+TTL : 86400 Sec
+
+How to clear the cache from all the edge locations..!! 
+Ans : perform invalidation.
+
+
+
+
+
+
 
 
 
