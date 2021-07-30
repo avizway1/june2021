@@ -1,0 +1,26 @@
+Launch amazon linux 2
+
+#!/bin/bash
+sudo yum -y update
+yum install httpd php-mysql -y
+amazon-linux-extras install -y php7.3
+cd /var/www/html
+wget https://wordpress.org/latest.tar.gz
+tar -xzvf latest.tar.gz
+cp -rv wordpress/* /var/www/html/
+rm -rfv wordpress
+rm -rfv latest.tar.gz
+chmod -R 755 wp-content
+chown -R apache:apache wp-content
+service httpd start
+chkconfig httpd on
+
+
+Instance ip : WP COnfiguration page
+
+Enter DB information
+
+/var/www/html/  create wp-config.php
+
+
+
