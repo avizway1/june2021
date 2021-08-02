@@ -314,15 +314,21 @@ Join Linux Instance to domain : https://www.youtube.com/watch?v=LWi9-XL2vWQ
 
 ______________________________________________________________________________________
 
+D: 02/08/2021
 
+CICD Deployment : 
 
+git clone
+git add .
+git status
+git commit -m "commit msg"
+git push
+git pull
 
+git checkout -b "branchname"
+git checkout branch
 
-
-
-
-
-
+_________________________________
 
 ECS : Elastic Container Service : AWS Own service 
 ECR : Elastic container registery : repository to store images
@@ -332,13 +338,34 @@ EKS : Elastic Kubernates Service :
 ECS : 
 --> EC2 : We will get an ec2 instance, docker runs with in instance.. App perf/resource utilisation depends on ec2 configurtion.
 --> Fargate : ECS manages everything, Based on load it scales.
+--> EXTERNAL : Self-managed on-premise infrastructure with ECS Anywhere
 
-Task Defination : Contqains information about what image, what configuration, network.. 
+Task Defination : Contains information about what image, what configuration, network.. 
 
 Login
 docker build -t avinashnginx .
 docker tag avinashnginx:latest 
 docker push
+
+_________________________________________________________________
+
+SQS : Simple queue service : used to decouple the process. 
+--> Standard : Every msg delivers
+--> FIFO Queue : first-in-first-out : Msgs priority
+
+Visibility timeout : 30 Sec.. Should be between 0 seconds and 12 hours.
+
+Message retention period : 4 days.. Should be between 1 minute and 14 days.
+
+Delivery delay : 0.. Max: 15 Min
+
+Maximum message size: 256 kb  (chunks... 1 chunk = 64 kb)
+
+msg size : 150 kb = 3 requests
+
+Dead-letter queue : Send undeliverable messages to a dead-letter queue.
+
+
 
 
 AWS Pricing Calculator: 
