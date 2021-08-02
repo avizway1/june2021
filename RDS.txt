@@ -219,6 +219,149 @@ TTL : 86400 Sec
 How to clear the cache from all the edge locations..!! 
 Ans : perform invalidation.
 
+______________________________________________________________________________________
+
+D: 31/07/2021
+
+Lambda : Serverless architecture : Underlying infra managed by aws.
+--> Configuration (128 mb memory) 
+--> How many reqests
+--> Code run time (in Minutes)
+
+python
+go
+node.js
+.net core
+ruby
+java
+
+Canary function : Open the website and look for the given string.
+
+How to trigger lambda function periodically.? 
+Ans : Amazon EventBridge / CLoudwatch events (Previously).. rate format and cron format..
+
+Increase the lfunction configurtions.? 
+Memory --> 128 mB, 10 GB..
+
+Add additional permissions to the lambda function.
+Navigate the ROle associate to the lambda, add required permissions. 
+
+Where we get all the logs / previous executed results.
+CLoudwatch logs.. Loggroups.. 
+
+Can we run lambda with in VPC.? If yes, how..??
+Lambda's Role must have "AWSLambdaVPCAccessExecutionRole" permissions.
+
+
+Python : https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
+https://www.youtube.com/watch?v=rfscVS0vtbw
+
+AWS Python DOcumentation : https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
+
+_______
+
+Task : Try the lambda functions i have shared.
+
+_____________________________________________________________________________
+
+Cloudformation : IaC (Infrastructure as Code) : 
+--> Free.. But for the resources it creates. 
+--> Supports JSON & YAML
+
+https://egghead.io/courses/learn-aws-lambda-from-scratch-d29d
+https://www.w3schools.com/js/js_json_intro.asp
+
+https://www.youtube.com/watch?v=yDp6pGwasMo&list=PLneBjIzDLECmpOYF5y51fOsBRqPkuX3NH
+
+_______________________________________________________________________________________
+
+
+cloud9 : IDE within AWS environment.
+
+AWS CDK : 
+node --version
+
+npm install -g aws-cdk
+
+cdk --version
+
+cdk init 		--> TO initialise a project in CDK
+cdk init sample-app --language typescript
+npm run watch
+cdk synth
+cdk bootstrap
+
+ * `npm run build`   compile typescript to js
+ * `npm run watch`   watch for changes and compile
+ * `npm run test`    perform the jest unit tests
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk synth`       emits the synthesized CloudFormation template
+
+AWS Console recorder : Chrome extension
+
+cdkworkshop.com
+______________________________________________________________________________________
+
+Directory Service : 
+--> Directory services with in AWS envronment : AWS Managed Microsoft AD
+--> We can extend existing AD environment to AWS with "AD Connector".
+
+Directory Service : https://www.youtube.com/watch?v=RDlBoAHVmZs
+AD COnnector : https://www.youtube.com/watch?v=Ca259gg6SoM
+
+Join Linux Instance to domain : https://www.youtube.com/watch?v=LWi9-XL2vWQ
+
+______________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+ECS : Elastic Container Service : AWS Own service 
+ECR : Elastic container registery : repository to store images
+EKS : Elastic Kubernates Service : 
+
+
+ECS : 
+--> EC2 : We will get an ec2 instance, docker runs with in instance.. App perf/resource utilisation depends on ec2 configurtion.
+--> Fargate : ECS manages everything, Based on load it scales.
+
+Task Defination : Contqains information about what image, what configuration, network.. 
+
+Login
+docker build -t avinashnginx .
+docker tag avinashnginx:latest 
+docker push
+
+
+AWS Pricing Calculator: 
+
+https://calculator.s3.amazonaws.com/index.html
+https://calculator.aws/#/
+
+
+__________________________________________________________________
+
+AWS Organisations : Manage multiple AWS accounts.. 
+--> SCP : Service control policy 
+
+root / master --> Enable Org
+
+AWS SSO : Place to manage login (users/groups) to multiple Accounts added into AWS rganisation.
+
+--> Permission set : 
+
+
+CICD : 
+
+aws codepipeline :   source code --> build --> deploy
 
 
 
