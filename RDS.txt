@@ -308,7 +308,7 @@ Directory Service :
 --> We can extend existing AD environment to AWS with "AD Connector".
 
 Directory Service : https://www.youtube.com/watch?v=RDlBoAHVmZs
-AD COnnector : https://www.youtube.com/watch?v=Ca259gg6SoM
+AD Connector : https://www.youtube.com/watch?v=Ca259gg6SoM
 
 Join Linux Instance to domain : https://www.youtube.com/watch?v=LWi9-XL2vWQ
 
@@ -365,7 +365,20 @@ msg size : 150 kb = 3 requests
 
 Dead-letter queue : Send undeliverable messages to a dead-letter queue.
 
+_______________________________________________________________________________________
 
+D: 03/08/2021
+
+AWS Organisations : Manage multiple AWS accounts.. 
+--> SCP : Service control policy : Service control policies (SCPs) enable central administration over the permissions available within the accounts in your organization. This helps ensure that your accounts stay within your organization’s access control guidelines.
+
+OrganizationAccountAccessRole
+
+root / master --> Enable Org
+
+AWS SSO : Place to manage login (users/groups) to multiple Accounts added into AWS rganisation.
+
+--> Permission set : 
 
 
 AWS Pricing Calculator: 
@@ -376,19 +389,34 @@ https://calculator.aws/#/
 
 __________________________________________________________________
 
-AWS Organisations : Manage multiple AWS accounts.. 
---> SCP : Service control policy 
+https://aws.amazon.com/getting-started/hands-on/amazon-ebs-backup-and-restore-using-aws-backup/?trk=gs_card
 
-root / master --> Enable Org
+https://aws.amazon.com/getting-started/hands-on/launch-load-balanced-wordpress-website/
 
-AWS SSO : Place to manage login (users/groups) to multiple Accounts added into AWS rganisation.
+https://aws.amazon.com/getting-started/hands-on/create-nosql-table/
 
---> Permission set : 
+https://aws.amazon.com/getting-started/hands-on/launch-a-wordpress-website/?trk=gs_card
+
+https://aws.amazon.com/getting-started/hands-on/amazon-efs-backup-and-restore-using-aws-backup/?trk=gs_card
+
+https://aws.amazon.com/getting-started/hands-on/migrate-rdsmysql-to-auroramysql/?trk=gs_card
+
+____________________________________________________________________
 
 
-CICD : 
+Jenkins : https://www.udemy.com/course/jenkinswithavinash/?couponCode=AUG123
 
-aws codepipeline :   source code --> build --> deploy
+Linux : https://www.udemy.com/course/linuxwithavinash/?couponCode=AUG123
+
+GIT : https://www.youtube.com/watch?v=rtI26X6FJX0&list=PLneBjIzDLECkdgoinrTO7D519zgPEmcte
+
+
+
+
+
+
+
+
 
 
 
